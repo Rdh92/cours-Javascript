@@ -1,0 +1,35 @@
+/* style pour l'introduction au JS */
+
+body{
+    background-color: bisque;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.stabilo{
+    background-color:olive;
+}
+
+.bouton{
+    background-color: olivedrab;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+code{
+    background-color: #fff;
+    color: tomato;
+    padding: 5px;
+}
