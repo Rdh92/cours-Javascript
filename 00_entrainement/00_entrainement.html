@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript - Entraînement</title>
     <!-- mes styles -->
-    <link rel="stylesheet" href="../css/styles.css">
+    
     <!-- scripts dans l'en-tête  -->
     <script>
         /*
@@ -21,7 +21,77 @@
         8-FONCTIONS
         9-SUPPLEMENTS
         */
-    </script>
+
+        // pour insérer du contenu dans le HTML 
+        document.write('<h1>01 Entraînement Javascript</h1>');
+
+        // 1 - AFFICHAGE
+
+        document.write('<h2 style="background: orange;width: 50%; color: #fff;text-align: center">1-AFFICHAGE</h2>');
+
+        var maBoite; //je déclare une variable
+        maBoite=10; //je lui affecte une valeur ici un nombre un "number"
+
+        let monAge = 12;  // je déclare et j'affecte en même temps
+
+        // var maBoite2 = 56;
+
+        // console.log(maBoite2);
+        console.log(maBoite,monAge);
+        console.log(monAge);
+
+        document.write('<p>Dans la variable maBoite il y a la valeur suivante :'+ maBoite +'</p>')
+
+        console.log('Un message dans la console.log');
+        console.info('un autre message dans une console')
+
+        alert('Ceci est un message d\'alerte');
+
+        confirm('Merci de confirmer, svp');
+
+        prompt('Comment allez-vous ?');
+
+        let humeur;
+        console.log(humeur)
+        humeur = prompt('Comment va ?');
+
+        console.log(humeur);
+
+        document.write('<p>Votre humeur ? : ' + humeur+'</p>')
+
+        // Mini exo : demandez à votre visiteur le prénom de sa maman 
+
+        let Prenom;
+        console.log(Prenom);
+        Prenom = prompt('Comment s\'appelle votre Maman ?');
+
+        console.log(Prenom);
+
+        document.write('<p>Le prénom de votre Maman :' + Prenom +'</p>');
+
+        // portée locale ou globale de la variable
+        // humeur et Prenom ont des portées globales 
+        if(true){
+            let nombre = 58;
+            // nombre a une portée locale 
+            console.info(nombre);
+        }
+
+        let nombre2;
+        if(true){
+            nombre2 = 999;
+        }
+        // ici la variable a une portée globale 
+        console.log(nombre2);
+
+        // une variable; le contenu varie
+        var noteEval = 12;
+        console.info(noteEval);
+        
+        // addition d'une valeur numérique (number) avec += ; soustraction -= ; division /= ; multiplication *=
+        noteEval += 2;
+        console.info(noteEval);
+    </script> 
 </head>
 <body>
     
