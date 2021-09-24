@@ -1,14 +1,14 @@
 /* style pour l'introduction au JS */
 
 body{
-    background-color: bisque;
+    background-color:olive;
 }
 
 main{
     width: 80%;
     margin: 0 auto;
     padding: 10px;
-    background-color: #fff;
+    background-color:peachpuff;
 }
 
 .stabilo{
