@@ -10,6 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
     <title>Javascript - II/01 introduction</title>
+
+    <!-- Script JS en externe -->
+    <script src="introduction.js" async></script>
 </head>
 <body>
     <!-- =================================== -->
@@ -23,7 +26,7 @@
     <!-- Conteneur principal -->
     <!-- =================================== -->
     <div class="container bg-warning">
-        <div class="row">
+        <section class="row">
             <div class="col-sm-4">
                 <h2>1 -Qu'est ce qu'une variable ?</h2>
                 <p>Une variable est un conteneur servant à stocker des informations de manière temporaire, du texte (une chaîne de caractère) ou un nombre. La variable varie ! Elle stocke différentes valeurs au fil du temps.</p>
@@ -48,14 +51,37 @@
             </div>
             <!-- fin colonne  -->
 
-            <div class="col-sm-4">
+            <section class="col-sm-4">
                 <h2>Initialiser une variable</h2>
                 <p>Quand on assigne une valeur à une variable vide on dit que l'on stocke une valeur ou qu'on initialise une variable</p>             
-            </div>
+            </section>
             <!-- fin colonne  -->
-        </div>
+        </section>
+        <!-- fin rangée  -->
+
+        <section class="row">
+            <h2>Différence entre <code>var</code> et <code>let</code></h2>
+            <hr>
+                <div class="col-sm-3 bg-info">
+                    <p><code>let</code> est plus récent et plus contraignant que <code>var</code></p>
+                </div>
+                <!-- fin col  -->
+                <div class="col-sm-3 bg-warning">
+                    <p>avec <code>var</code> on n'est pas obligé de déclarer la variable avant de la manipuler ou de l'affecter</p>
+                </div>
+                <!-- fin col  -->
+                <div class="col-sm-3 bg-success">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eius cum officia maxime dolores deserunt molestias ex adipisci totam aliquam atque fugit ullam hic ipsum possimus iste! Cumque, rerum repellendus?</p>
+                </div>
+                <!-- fin col  -->
+                <div class="col-sm-3 bg-primary">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eius cum officia maxime dolores deserunt molestias ex adipisci totam aliquam atque fugit ullam hic ipsum possimus iste! Cumque, rerum repellendus?</p>
+                </div>
+                <!-- fin col  -->
+        </section>
         <!-- fin rangée  -->
     </div>
+    <!-- fin div container  -->
 
 
     <!-- Optionnal Javascript -->
