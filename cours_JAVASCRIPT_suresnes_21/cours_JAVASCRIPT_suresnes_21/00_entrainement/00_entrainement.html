@@ -298,7 +298,7 @@ prompt
 
         // PUIS la même chose avec switch pour lundi matin
 
-        switch (couleur) {
+        switch (couleurPrefere) {
         case 'vert':
             document.write('<p>Switch - Votre couleur préférée est le vert</p>');
             break;
@@ -312,7 +312,7 @@ prompt
             document.write('<p>Switch - Votre couleur préférée est le parme</p>');
             break;
         default:
-        document.write('<p>Switch - Votre couleur préférée n\'est ni le vert , ni l\'azur , ni le rouge , ni le parme , votre couleur préférée est le ' + couleur + ' </p>');
+        document.write('<p>Switch - Votre couleur préférée n\'est ni le vert , ni l\'azur , ni le rouge , ni le parme , votre couleur préférée est le ' + couleurPrefere + ' </p>');
 
     }
 
@@ -327,7 +327,38 @@ prompt
             w1++;// contenu de la variable + 1 : incrémenter
         }// La boucle stoppe  dès que w1 atteint 15
 
+        // FOR EXO 1
+        // pour une variable for1 inférieure ou égale à 10 bouclez et incrémentez
 
+        for (let for1 = 0; for1 <= 10; for1++) {
+            //console.log(for1);
+            document.write('for1 contient ' + for1 + ' à chaque tour de boucle <br>');
+        }
+
+
+        //EXO 2 une boucle for2 inférieure ou égale à 10 bouclez et incrémentez
+
+        // suite exo 2 avec if else on rajoute à la fin de la boucle la phrase "et la boucle se termine là"
+
+        for (let for2 = 0; for2 <= 10; for2++) {
+            //console.info(for2);
+            if (for2 == 10) {
+                document.write('et la boucle se termine là car for 2 arrive à ' + for2);
+            } else {
+                document.write('for2 contient ' + for2 +' <br>');
+            }//fin du else
+        }//fin du for
+
+        document.write('<hr>');
+        //EXO 2 La même boucle, autre manière de faire
+
+        for (let for3 = 0; for3 <= 10; for3++) {
+            if (for3 < 10) {
+                document.write('for3 contient' + for3+'<br>');
+            } else {
+                document.write('et la boucle se termine là car for3 arrive à ' + for3);
+            }//fin du else
+        }//fin du for
 
 
 
@@ -367,7 +398,7 @@ prompt
 
 
 
-        document.write('</main>');
+        // document.write('</main>');
 
     </script>
 </head>
