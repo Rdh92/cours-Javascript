@@ -480,9 +480,9 @@ prompt
 
         function meteoIfElseIf(saison, temperature) {
             if (saison == 'printemps') {
-                var message5 = document.write('nous sommes au ' + saison + ' et la températue est de '+ temperature + ' degrés');
+                var message5 = document.write('nous sommes au ' + saison + ' et la température est de '+ temperature + ' degrés');
             } else if (saison == 'été' || saison == 'automne' || saison =='hiver'){
-                var message5 = document.write('nous sommes au ' + saison + ' et la températue est de '+ temperature + ' degrés');
+                var message5 = document.write('nous sommes au ' + saison + ' et la température est de '+ temperature + ' degrés');
             }else {
                 var message5 = alert('cette saison :' + saison + ' n\'existe pas !!! Sauf sur Neptune !');
             }
@@ -515,16 +515,18 @@ prompt
             
             if (age < 6) {
                 var message6 = alert('Votre enfant n\'a pas l\'âge d\'aller à l\'école');
-            } else if (age == 6 ||11 ){
-                var message6 = document.write('Votre enfant va en primaire');
-            } else if(age == 11 ||15){
-                var message6 = document.write('Votre enfant va au collège');
-            } else if(age == 15 || 18) {
-                var message6 = document.write('Votre enfant va au lycée');
-            }
+            } else if (age >= 6 && age < 11 ){
+                var message6 = document.write('<p>Votre enfant a ' + age + 'ans.Il va en primaire</p>');
+            } else if(age >= 11 && age < 15){
+                var message6 = document.write('<p>Votre enfant a ' + age + 'ans.Il va au collège</p>');
+            } else if(age >= 15 && age < 18) {
+                var message6 = document.write('<p>Votre enfant a ' + age + 'ans.Il va au lycée</p>');
+            }else
+                var message6 = document.write('<p>Votre enfant a ' + age + 'ans. Il n\'est pas scolarisable</p>');
 
             return message6;
-        }
+        }//fin fonction
+        //on appelle la fonction après
         quelleEcole(age);
 
 
