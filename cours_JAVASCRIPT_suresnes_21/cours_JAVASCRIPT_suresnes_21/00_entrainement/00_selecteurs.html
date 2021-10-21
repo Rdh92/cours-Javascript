@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sélecteurs</title>
+</head>
+<body>
+    <h2 id="titre">Mon titre de niveau 2</h2>
+    <div class="avion">Airbus 1 - A320</div>
+    <div class="avion">Airbus 2 - A320</div>
+    <p class="avion">Le premier P</p>
+    <div class="avion">Airbus 3 - A320</div>
+
+    <p id="para">paragraphe 1</p>
+    <p>paragraphe 2</p>
+    <p>paragraphe 3</p>
+    <p>paragraphe 4</p>
+    <p>paragraphe 5</p>
+
+    <p>coucou</p>
+    <p>coucou</p>
+    <p>coucou</p>
+    <p>coucou</p>
+    <p>coucou</p>
+    
+    <script>
+        var monTitre1 = titre;
+        console.log(monTitre1);
+
+        //sélection par id
+        var monTitre2 = document.getElementById('titre');
+        console.log(monTitre2);
+
+        //sélection par class
+        var lesAvions = document.getElementsByClassName('avion');
+        console.log(lesAvions);
+        
+        console.log(lesAvions[1]);
+
+        //injecter le texte suivant "il est beau mon avion" dans l'élément indice 
+        console.log(lesAvions[1].innerHTML);// innerHTML permet d'examiner dans la console le contenu d'un élément
+
+        lesAvions[1].innerHTML = 'Il est beau mon avion';
+        console.log(lesAvions[1]);
+
+        // modifier le contenu du H2 pour écrire "il est beau le bonnet de Redha"
+        console.log(monTitre2.innerHTML);
+        document.getElementById('titre').innerHTML = 'Il est beau le bonnet de Redha !';
+        
+        // par nom d'éléments
+        let mesP = document.getElementsByTagName('p');
+        console.log(mesP);
+
+        console.log(mesP[2].innerHTML);
+
+        //faire une boucle for pour passer le texte des p en red et mettre une margin top aux p de 30px.
+
+        for (let i = 0; i < mesP.length ; i++) {
+            mesP[i].style.color = "red";
+            mesP[i].style.marginTop = "30px";
+            // += ajoute et affecte 
+            mesP[i].innerHTML += ' les loulous ';
+        }
+
+        // on essaie maintenant avec query
+
+        // on sélectionne les p avec query
+
+        let query6 = document.querySelectorAll('p');
+        console.log(query6);
+
+        let lesAvions2 = document.querySelectorAll('.avion');
+        console.log(lesAvions2);
+
+        let paraP = document.querySelector('#para');
+        console.log(paraP);
+
+        let divAvion = document.querySelectorAll('div.avion');
+        console.log(divAvion);
+
+        //à la seconde div on applique maintenant un fond bleu, un texte blanc, en gras et taille de typo 2em
+
+        divAvion[1].style.backgroundColor = "lightblue";
+        divAvion[1].style.color = "white";
+        divAvion[1].style.fontWeight = "bold";
+        divAvion[1].style.fontSize = "2em";
+        divAvion[1].style.height = "400px";
+        divAvion[1].style.width = "400px";
+
+    </script>
+</body>
+</html>
