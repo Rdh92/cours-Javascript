@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 13 - Parité</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <h1>Exo 13 - Parité</h1>
+    <p>Soit la boucle for dans le js 13-parite.js : ce programme affiche les nombres pairs jusqu'a 10 dans la console. Tapez le et examinez le résultat dans votre console.</p>
+
+    <p><code>for (var i = 1; i <= 20; i++) {</code></p>
+    <p><code>if (i % 2 === 0) {</code></p>
+    <p><code>console.log(i + ' est pair');</code></p>
+    <p><code>}</code></p>
+    <p><code>}</code></p>
+
+    <p>Ce programme utilise le modulo (reste de la division est égal à 0) pour trouver les nombres pairs en dessous de 10</p>
+
+    <p class="bg-warning font-weight-bold border border-radius">des exemples pour l'utilisation du modulo</p>
+
+    <ul>
+        <li>console.log(10%2);// Affiche 0 car 10 = 5*2+0</li>
+        <li>console.log(11%2);// Affiche 1 car 11 = 5*2+</li>
+        <li></li>
+        <li>console.log(18%3);// Affiche 0 car 18 = 3*6+0</li>
+        <li>console.log(19%3);// Affiche 1 car 19 = 3*6+1</li>
+        <li>console.log(120%3);// Affiche 2 car 20 = 3*6+2</li>
+    </ul>
+    <hr>
+
+    <ul>
+        <li>Exo 1 : modifiez le programme, dans une boucle for, afin qu'il affiche dans la console, les nombres impairs.</li>
+        <li>Exo 2 : puis modifiez le programme toujours dans une boucle for afin que le nombre initial soit saisi par l'utilisateur. ATTENTION : le nombre saisi par l'utilisateur peut être n'importe lequel, limitez dans une nouvelle variable, ce nombre en lui ajoutant 10 afin que le test ""inférieur à " puisse être "testé"...</li>
+        <li>Exo 3 : faites la même boucle, en demandant un second nombre, avec while</li>
+    </ul>
+    <hr>
+    <p id="p1"></p>
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="13_parite.js"></script>
+</body>
+</html>

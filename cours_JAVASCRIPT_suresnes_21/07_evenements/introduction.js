@@ -50,3 +50,39 @@ function fonctionDivOrange(e) {
     // je change la taille de typo à 1.5em
     this.style.fontSize
 }
+
+document.querySelector('#bleu').addEventListener('mouseoout', fonctionDivbleu);
+
+function fonctionDivbleu(e) {
+   console.log (e);
+    alert('Vous avez survolé la div #bleu');
+    this.innerHTML = "coucou2";
+    // je change la taille de typo à 1.5em
+    this.style.fontSize = "1.5em";
+}
+
+//4- FORMULAIRE
+document.querySelector('#email').addEventListener('focus', inputEmailFocus);
+function inputEmailFocus() {
+    alert('focus sur le champs email');
+    this.style.background = 'lightgreen';
+    this.classList.add('text-white');
+}
+
+document.querySelector('#pass').addEventListener('blur' , inputPasswordBlur);
+function inputPasswordBlur() {
+    this.style.background = 'lightblue';
+    this.classList.add = ('text-white');
+}
+
+//écouteur d'évènement sur le bouton avec click
+document.querySelector('#submit').addEventListener('click', inputBtnSubmit);
+
+function inputBtnSubmit(event) {
+    event.preventDefault();//on ajoute "event" en argument à cette fonction //event.preventDefault();// neutralise le formulaire pour la démo ou si on récupère les données en développement. Cela neutralise également les required
+    //les champs ne sont pas réinitialisés le contenu est conservé
+    alert('Nous avons bien reçu votre formulaire');
+    this.classList.add('bg-succes');
+    this.innerHTML = "Félicitations vous êtes connecté ! ";
+}
+
