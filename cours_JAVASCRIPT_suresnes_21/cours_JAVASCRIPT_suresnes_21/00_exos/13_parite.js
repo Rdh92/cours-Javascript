@@ -34,3 +34,20 @@ for (var i = 1; i<=10; i++) {
 
 // exo 3 WHILE
 document.write('<p>*************** EXO 3 ***************</p>');
+var nbrUtilisateur2 = parseInt(prompt('Exo 3 : rentrez un nombre entier, merci'));
+console.log(typeof nbrUtilisateur2, nbrUtilisateur2);
+
+var nbrUtilisteurMax2 = (nbrUtilisateur2 + 10);
+console.log(typeof nbrUtilisteurMax2, nbrUtilisteurMax2);
+
+while (nbrUtilisateur2 <= nbrUtilisteurMax2) {
+    // document.write('code');
+    // nbrUtilisateur2++;
+    if(nbrUtilisateur2 % 2 === 0){
+        document.write('<p class="stabilo"> '+ nbrUtilisateur2 + ' est pair. <p>');
+    } else {
+        document.write('<p> ' + nbrUtilisateur2 + ' est impair </p>');
+    }
+    nbrUtilisateur2++;
+}
+document.write('<p>*************** EXO 3 ***************</p>');
