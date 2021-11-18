@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Required meta tags  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Une boucle for</h1>
+    <script>
+        let monsoldeBanque = 1500;
+
+        let montant = prompt('Combien voulez-vous retirer ?');
+        let nbRetraits = prompt('Combien de retraits ?');
+
+        console.log(monsoldeBanque, montant, nbRetraits)
+
+        for (let i=0; i<nbRetraits; i++){
+            monsoldeBanque = monsoldeBanque - montant;
+            console.log('le solde à chaque passage de la boucle', monsoldeBanque);
+        }
+
+        //EXEMPLE
+        // monSoldeBanque = 1500;
+        // montant = 20;
+        // nbRetraits = 6;
+
+        // 1500 - 20 = 1480;
+        // 1480 - 20 = 1460;
+        // 1460 - 20 = 1440;
+        // 1440 - 20 = 1420;
+        // 1420 - 20 = 1400;
+        // 1400 - 20 = 1380;
+
+        // Ce qui correspond à : 
+        // monSoldeBanque - montant ( 6 fois)
+
+        console.info(monsoldeBanque);
+
+
+        let montant2 = parseInt(prompt('Combien voulez-vous retirer ?'));
+        let nbRetraits2 = parseInt(prompt('Combien de retraits ?'));
+
+        console.log(typeof montant2, montant2);
+        console.log(typeof nbRetraits2, nbRetraits2)
+
+        for (let i=0; i < nbRetraits2; i++){
+            monsoldeBanque = monsoldeBanque - montant2;
+            console.log('le solde à chaque passage de la boucle', monsoldeBanque);
+        }
+
+    </script>
+    
+</body>
+</html>
